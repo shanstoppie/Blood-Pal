@@ -27,7 +27,7 @@ function LoadFunction(){
               $('#historyTable').append(content);
          }
           });
-          firebase.database().ref('Volunteers/H5QsCL84IvMy3iXzh06X9zJSW013/Camp History').once("value",function(snapshot){
+          firebase.database().ref('Volunteers/'+id+'/Camp History').once("value",function(snapshot){
             if(snapshot.exists()){
               var content='';
               snapshot.forEach(function(data){
