@@ -50,7 +50,7 @@ function LoadFunction(){
         }
         else
         {
-          console.log("User state check pannunga thambi");  
+          console.log("error");  
         }
       });
 };
